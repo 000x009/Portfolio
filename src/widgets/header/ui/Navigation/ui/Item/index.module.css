@@ -1,0 +1,22 @@
+.item {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  user-select: none;
+  cursor: pointer;
+  text-transform: lowercase;
+  padding: 8px 16px;
+  border-radius: 99px;
+  background-color: #000;
+  transition:
+    color,
+    background-color 0.3s ease-in-out;
+  transition-delay: 75ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item:hover {
+  color: #000;
+  background-color: var(--primary-color);
+}
+.item:active {
+  transform: translate3d(2px, 2px, 0);
+}
