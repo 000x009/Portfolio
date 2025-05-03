@@ -1,18 +1,20 @@
 .wrapper {
-  display: flex;
-  user-select: none;
-  align-items: center;
-  padding: 8px 12px;
-  border-radius: 4px;
-  background-color: var(--primary-color);
-  color: #000;
-  border: 3px solid black;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: #000;
+    border: 3px solid black;
+    cursor: pointer;
 }
+
 .wrapper:active {
-  transform: translate3d(2px, 2px, 2px);
+    transform: translate3d(2px, 2px, 2px);
 }
 
 .text {
-  font-weight: 500;
-  font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
 }

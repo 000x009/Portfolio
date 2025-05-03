@@ -1,30 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 @import url("./normalize.css");
+@import "tailwindcss";
 
 :root {
-  --text-color: #fff;
-  --bg-color: #fff;
-  --hint-color: rgb(100 116 139);
-  --secondary-bg-color: #fff;
-  --primary-color: #44ff00;
+    --text-color: #000;
+    --bg-color: #fff;
+    --hint-color: rgb(100 116 139);
+    --secondary-bg-color: #fff;
+    --soft-black-color: #1c1c1c;
+    --primary-color: #44ff00;
+    --text-shadow: 2px 0 #000;
 }
 
 [theme-color="dark"] {
-  --text-color: #fff;
-  --bg-color: #1c1c1c;
-  --secondary-bg-color: #000;
+    --text-color: #fff;
+    --bg-color: #1c1c1c;
+    --secondary-bg-color: #000;
 }
 
 html {
-  font-family: "Jersey 15", Inter, arial;
-  background: var(--bg-color);
-  color: var(--text-color);
+    font-family: "Jersey 15", Inter, arial;
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  display: block;
-  font-size: 1rem;
-  overflow: auto;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    display: block;
+    font-size: 1rem;
+    min-height: 100vh;
 }

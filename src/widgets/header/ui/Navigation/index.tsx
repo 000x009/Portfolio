@@ -22,7 +22,7 @@ export const Navigation: FC<IProps> = ({
   return (
     <ol className={classNames(className, styles.wrapper)} {...props}>
       {navElements.map((item) => (
-        <Item>{item.name}</Item>
+        <Item key={item.id}>{item.name}</Item>
       ))}
     </ol>
   );

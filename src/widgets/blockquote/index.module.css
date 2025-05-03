@@ -1,0 +1,31 @@
+.quoteHighlighter {
+  text-shadow: 2px 0 #000;
+  color: var(--primary-color);
+}
+
+.quote {
+  margin-top: 100px;
+  animation: popup 1s forwards;
+}
+
+.quote::before {
+  content: "🙶 ";
+  color: #000;
+  font-size: 3rem;
+  text-shadow: 2px 2px var(--primary-color);
+}
+.quote::after {
+  content: " 🙷";
+  font-size: 3rem;
+  color: #000;
+  text-shadow: 2px 2px var(--primary-color);
+}
+
+@keyframes popup {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}

@@ -1,18 +1,21 @@
 .wrapper {
-  display: flex;
-  padding: 16px 100px;
-  justify-content: space-between;
-  align-items: center;
-  backdrop-filter: blur(12px);
+    display: flex;
+    padding: 16px 100px;
+    width: 100%;
+    z-index: 99999;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(16px);
 }
 
 .name {
-  padding: 8px;
-  color: #000;
-  background-color: #fff;
+    padding: 8px;
+    color: #000;
 }
 
 .age {
-  color: var(--primary-color);
-  text-shadow: 2px 0 #000;
+    color: var(--primary-color);
+    text-shadow: 2px 0 #000;
 }
