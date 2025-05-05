@@ -1,0 +1,1 @@
+declare module "src/entities/me/ui/Me3d.jsx"

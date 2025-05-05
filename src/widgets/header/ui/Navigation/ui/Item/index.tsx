@@ -1,16 +1,17 @@
-import { FC, ReactNode, HTMLAttributes } from "react";
+import {FC, HTMLAttributes, ReactNode} from "react";
 import styles from "./index.module.css";
-import classNames from "classnames";
+import {cc} from "../../../../../../shared/lib/helpers/cc.ts";
 
 interface IProps extends HTMLAttributes<HTMLElement> {
-  className?: string;
-  children: ReactNode;
+    className?: string;
+    children: ReactNode;
+    to: string;
 }
 
-export const Item: FC<IProps> = ({ className, children, ...props }) => {
-  return (
-    <li className={classNames(className, styles.item)} {...props}>
-      {children}
-    </li>
-  );
+export const Item: FC<IProps> = ({className, children, to, ...props}) => {
+    return (
+        <a href={to} className={cc(className, styles.item)} {...props}>
+            {children}
+        </a>
+    );
 };

@@ -1,6 +1,6 @@
 import {FC} from "react";
-import classNames from "classnames";
 import {Text} from "../../../../shared/ui/Text";
+import {cc} from "../../../../shared/lib/helpers/cc.ts";
 
 interface Props {
     className?: string;
@@ -10,7 +10,7 @@ interface Props {
 export const SkillCard: FC<Props> = ({className, children}) => {
     return (
         <Text
-            className={classNames(className, "flex py-2 px-4 select-none")}>
+            className={cc(className, "flex py-2 px-4 select-none")}>
             {children}
         </Text>
     )

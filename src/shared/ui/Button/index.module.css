@@ -2,12 +2,13 @@
     display: flex;
     user-select: none;
     align-items: center;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.primary {
     background-color: var(--primary-color);
     color: #000;
-    border: 3px solid black;
-    cursor: pointer;
 }
 
 .wrapper:active {
@@ -17,4 +18,8 @@
 .text {
     font-weight: 500;
     font-size: 1.5rem;
+}
+
+.secondary {
+    outline: 1px solid var(--primary-color);
 }

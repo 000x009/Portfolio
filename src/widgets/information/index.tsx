@@ -22,7 +22,7 @@ export const InformationWidgets: FC = () => {
     ]
 
     return (
-        <section className="p-24 flex flex-wrap justify-center gap-6">
+        <section id="about" className="p-25 flex flex-wrap justify-center gap-6">
             <InformationCard title="about me" className={styles.about}>
                 <div className="flex gap-4">
                     <Image className="object-cover h-40 w-40" src={UserPicture} alt={"userpic"}/>

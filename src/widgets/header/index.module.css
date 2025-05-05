@@ -19,3 +19,7 @@
     color: var(--primary-color);
     text-shadow: 2px 0 #000;
 }
+
+.fullname {
+    text-shadow: 1px 0 #ffffff;
+}
