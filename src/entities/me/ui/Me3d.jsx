@@ -1,7 +1,7 @@
 import {useGLTF} from "@react-three/drei";
 
 export const MeModel = () => {
-    const {nodes} = useGLTF(`models/me3d.glb`);
+    const {nodes} = useGLTF(`./models/me3d.glb`);
 
     return (
         <group dispose={null}>
@@ -10,4 +10,4 @@ export const MeModel = () => {
     );
 };
 
-useGLTF.preload("/models/media.glb");
+useGLTF.preload("./models/media.glb");
