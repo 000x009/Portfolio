@@ -10,4 +10,4 @@ export const MeModel = () => {
     );
 };
 
-useGLTF.preload("./models/media.glb");
+useGLTF.preload("./models/me3d.glb");
