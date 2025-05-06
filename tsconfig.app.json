@@ -11,7 +11,6 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "jsxFactory": "React.createElement",
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
@@ -19,7 +18,6 @@
     "noEmit": true,
     "jsx": "preserve",
     "allowJs": true,
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
