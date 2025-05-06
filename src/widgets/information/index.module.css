@@ -1,3 +1,13 @@
 .spokenLanguage {
     border: 1px solid white;
 }
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        padding: 16px !important;
+    }
+
+    .aboutImage {
+        display: none !important;
+    }
+}

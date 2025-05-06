@@ -15,7 +15,7 @@ export const InformationCard: FC<Props> = ({className, title, children}) => {
             className={cc(
                 className,
                 styles.card,
-                "text-white rounded-2xl flex flex-col text-2xl gap-[20px] p-[20px] bg-black flex-1 border-[2px] border-green-500 border-s",
+                "text-white flex-wrap rounded-2xl flex flex-col text-2xl gap-[20px] p-[20px] bg-black flex-1 border-[2px] border-green-500 border-s",
             )}
         >
             <Text className="text-5xl">

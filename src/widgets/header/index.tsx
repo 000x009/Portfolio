@@ -12,7 +12,6 @@ interface Props {
 const navElements: INavItem[] = [
     {id: 0, to: "#about", name: "about"},
     {id: 1, to: "#experience", name: "experience"},
-    {id: 2, to: "/pdf", name: "pdf"},
 ];
 
 export const Header: FC<Props> = ({className, ...restProps}) => {
@@ -24,7 +23,7 @@ export const Header: FC<Props> = ({className, ...restProps}) => {
                 y.o.</Text>
             </Text>
             <Navigation navElements={navElements}/>
-            <Button>Contact</Button>
+            <Button className={styles.contact}>Contact</Button>
         </header>
     );
 };

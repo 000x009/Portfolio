@@ -2,13 +2,13 @@ import {Text} from "../Text";
 import styles from "./index.module.css";
 import {cc} from "../../lib/helpers/cc.ts";
 
-export const Button = ({
+export function Button({
                            component = "button",
                            variant = "primary",
                            children,
-                           className = null,
+                           className = "none",
                            ...props
-                       }) => {
+                       }) {
     const Component = component
 
     return (
@@ -20,4 +20,4 @@ export const Button = ({
             )}
         </Component>
     );
-};
+}

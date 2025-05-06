@@ -23,3 +23,21 @@
 .fullname {
     text-shadow: 1px 0 #ffffff;
 }
+
+.contact {
+    display: initial;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        padding: 16px;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .name {
+        font-size: 1.5rem !important;
+    }
+}

@@ -1,9 +1,15 @@
 .wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: absolute;
-  transform: translate(-50%);
-  left: 50%;
-  gap: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        display: none;
+    }
 }

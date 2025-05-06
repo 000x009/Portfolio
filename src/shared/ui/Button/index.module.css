@@ -3,6 +3,7 @@
     user-select: none;
     align-items: center;
     padding: 4px 12px;
+    justify-content: center;
     cursor: pointer;
 }
 

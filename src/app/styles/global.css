@@ -22,6 +22,7 @@ html {
     font-family: "Jersey 15", Inter, arial;
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 body {
