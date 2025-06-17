@@ -1,5 +1,5 @@
 # My portfolio
-It is built using Typescript + React
+It is built using Typescript + React + ThreeJS
 
 # Run
 1. ```npm install```
