@@ -3,6 +3,7 @@ import { Press_Start_2P, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ProfileSidebar } from "@/widgets/ProfileSidebar";
 import { Navigation } from "@/shared/ui";
+import { Analytics } from "@vercel/analytics/react";
 
 const pressStart2P = Press_Start_2P({
   variable: "--font-press-start-2p",
@@ -48,6 +49,7 @@ export default function RootLayout({
             </div>
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
