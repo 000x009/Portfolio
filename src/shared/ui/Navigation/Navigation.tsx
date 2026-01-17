@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 
 const NAV_ITEMS = [
   { id: 'player', label: 'Player', path: '/' },
-  { id: 'exp', label: 'Stats', path: '/exp' },
+  { id: 'exp', label: 'Stats', path: '/stats' },
   { id: 'skills', label: 'Skills', path: '/skills' },
   { id: 'contact', label: 'Contact', path: '/contact' },
 ];
