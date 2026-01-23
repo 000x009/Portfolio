@@ -21,13 +21,13 @@ export const JobCard = ({
   technologies,
 }: JobCardProps) => {
   return (
-    <div className="bg-white p-6 border-2 max-w-md text-black relative">
+    <div className="bg-white p-4 sm:p-6 border-2 max-w-full md:max-w-md text-black relative">
       {/* Header */}
-      <div className="flex justify-between items-start mb-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-start mb-4">
         <div>
-          <h3 className="font-sans text-black text-lg font-bold mb-1">{title}</h3>
-          <p className="font-sans text-black text-sm mb-1">{company}</p>
-          <p className="font-sans text-black text-xs">{period}</p>
+          <h3 className="font-sans text-black text-base sm:text-lg font-bold mb-1">{title}</h3>
+          <p className="font-sans text-black text-xs sm:text-sm mb-1">{company}</p>
+          <p className="font-sans text-black text-[10px] sm:text-xs">{period}</p>
         </div>
         
         {link && (
@@ -38,6 +38,7 @@ export const JobCard = ({
             className="text-black hover:opacity-80 transition-opacity"
           >
             <svg
+              className="w-5 h-5 sm:w-6 sm:h-6"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -60,7 +61,7 @@ export const JobCard = ({
         {roles.map((role) => (
           <span
             key={role}
-            className="bg-black text-white font-sans text-xs px-3 py-1.5 font-bold"
+            className="bg-black text-white font-sans text-[10px] sm:text-xs px-3 py-1.5 font-bold"
           >
             {role}
           </span>
@@ -72,7 +73,7 @@ export const JobCard = ({
         {technologies?.map((tech) => (
           <div
             key={tech.name}
-            className="w-10 h-10 flex items-center justify-center"
+            className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center"
             title={tech.name}
           >
             <img

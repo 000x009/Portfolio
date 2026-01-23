@@ -14,7 +14,7 @@ export const Card = ({ children, className = '', title }: CardProps) => {
           <h3 className="font-sans text-white text-xs">{title}</h3>
         </div>
       )}
-      <div className="bg-white px-4 py-3 rounded-md">
+      <div className="bg-white px-3 md:px-4 py-3 rounded-md">
         {children}
       </div>
     </div>

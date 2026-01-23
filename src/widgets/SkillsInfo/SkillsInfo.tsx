@@ -67,17 +67,17 @@ const getTagClasses = (variant: string) => {
 
 export const SkillsInfo = () => {
   return (
-    <div className="px-10 py-10 text-white">
+    <div className="px-6 py-8 text-white md:px-10 md:py-10">
       <div className="mb-8">
-        <h2 className="font-sans text-lg mb-6">Core</h2>
-        <div className="flex flex-wrap gap-8">
+        <h2 className="font-sans text-base md:text-lg mb-4 md:mb-6">Core</h2>
+        <div className="flex flex-wrap gap-6 md:gap-8">
           {CORE_SKILLS.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center gap-3">
-              <div className="w-16 h-16 flex items-center justify-center">
+              <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-14 h-14 object-contain"
+                  className="w-12 h-12 md:w-14 md:h-14 object-contain"
                 />
               </div>
               <div className="flex gap-1">
@@ -99,12 +99,12 @@ export const SkillsInfo = () => {
       </div>
 
       <div>
-        <h2 className="font-sans text-lg mb-6">Other</h2>
+        <h2 className="font-sans text-base md:text-lg mb-4 md:mb-6">Other</h2>
         <div className="flex flex-wrap gap-3">
           {OTHER_SKILLS.map((skill) => (
             <span
               key={skill.name}
-              className={`px-4 py-2 text-xs font-sans ${getTagClasses(skill.variant)}`}
+              className={`px-3 md:px-4 py-2 text-[10px] md:text-xs font-sans ${getTagClasses(skill.variant)}`}
             >
               {skill.name}
             </span>

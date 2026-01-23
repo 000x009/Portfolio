@@ -31,20 +31,20 @@ export default function RootLayout({
       <body
         className={`${pressStart2P.variable} ${jetBrainsMono.variable} antialiased`}
       >
-        <div className="flex h-screen overflow-hidden">
-          <div className="w-full absolute top-25 z-50 left-0 border-b-1 border-separator"/>
-          <div className="w-full absolute bottom-25 z-50 left-0 border-b-1 border-separator"/>
+        <div className="relative flex min-h-screen flex-col overflow-hidden md:h-screen md:flex-row">
+          <div className="hidden md:block w-full absolute top-25 z-50 left-0 border-b-1 border-separator"/>
+          <div className="hidden md:block w-full absolute bottom-25 z-50 left-0 border-b-1 border-separator"/>
           {/* Left Sidebar - Static */}
-          <aside className="w-[35%] min-w-[400px] max-w-[500px] pl-20 relative">
+          <aside className="w-full relative border-solid px-6 pt-6 md:w-[35%] md:min-w-[400px] md:max-w-[500px] md:pl-20 md:pt-0">
             <ProfileSidebar />
           </aside>
 
           {/* Right Content - Dynamic */}
-          <main className="flex-1 overflow-auto bg-black mr-20 border-r-1 border-separator">
+          <main className="flex-1 overflow-auto bg-black md:mr-20 md:border-r-1 md:border-separator">
             <div className="min-h-screen">
               <Navigation />
               {children}
-              <footer className="sticky bottom-0 h-25 bg-black z-49 text-center text-white text-sm py-4">
+              <footer className="md:sticky bottom-0 h-16 md:h-25 bg-black z-49 text-center text-white text-sm py-4">
               </footer>
             </div>
           </main>

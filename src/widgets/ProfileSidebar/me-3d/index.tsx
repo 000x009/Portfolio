@@ -8,7 +8,7 @@ import styles from "./index.module.css";
 
 export const Me3D: FC = () => {
     return (
-        <div>
+        <div className="w-full">
             <Canvas
                 shadows
                 className={styles.canvas}

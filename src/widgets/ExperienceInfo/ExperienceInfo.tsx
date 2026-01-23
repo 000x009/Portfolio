@@ -61,8 +61,8 @@ export const ExperienceInfo = () => {
   ];
 
   return (
-    <div className="px-10 py-10">
-      <div className="flex gap-1 text-md flex-col mb-8">
+    <div className="px-6 py-8 md:px-10 md:py-10">
+      <div className="flex gap-1 text-sm md:text-base flex-col mb-6 md:mb-8">
         <span className="font-sans text-white">2+ years</span>
         <span className="font-sans text-primary">of making software</span>
       </div>

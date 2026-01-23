@@ -26,7 +26,7 @@ const LeakedIdSection = () => (
 
 export const PlayerInfo = () => {
   return (
-    <div className="space-y-6 px-10 py-4 max-w-lg">
+    <div className="space-y-6 px-6 py-6 md:px-10 md:py-4 max-w-full md:max-w-lg">
       <AboutSection />
       <LeakedIdSection />
     </div>
